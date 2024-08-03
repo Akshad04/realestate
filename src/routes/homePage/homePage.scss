@@ -1,0 +1,324 @@
+// Import the base styles and responsive mixins
+@import "../../responsive.scss";
+
+// Base styles
+.body {
+  padding: 0;
+  margin: 0;
+}
+
+.homePage {
+  width: 100%;
+  height: 100vh; // Ensure full viewport height
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://www.compass.com/m/87745c0253dcffd59b7d402004ba87c85f6ec461_img_1/origin.jpg") no-repeat center center;
+  background-size: cover; // Ensure the image covers the entire background
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  .textContainer {
+    flex: 3;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    .wrapper {
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      height: 100%;
+      margin: 0;
+      padding: 0 15px; // Adjust padding for small screens
+      animation: fadeIn 1s ease-out;
+
+      p {
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        justify-content: center;
+        animation: slideIn 3s ease-out;
+      }
+
+      @include lg {
+        padding-right: 50px;
+      }
+
+      @include md {
+        padding: 0;
+      }
+
+      @include sm {
+        justify-content: flex-start;
+      }
+
+      .title {
+        font-size: 50px;
+        color: white;
+        margin-top: 60px;
+        text-align: center;
+        animation: slideIn 3s ease-out;
+
+        @include lg {
+          font-size: 48px;
+        }
+      }
+
+      .boxes {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        margin: 0;
+        padding: 0;
+        animation: fadeInUp 1s ease-out;
+
+        @include sm {
+          display: none;
+        }
+
+        .box {
+          transition: transform 0.3s ease, background-color 0.3s ease;
+        
+          &:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2); // Light background color on hover
+        
+            // Apply hover effects to h1 and h2 when hovering over .box
+            h1, h2 {
+              transform: scale(1.05);
+              color: #ff9900; // Example color on hover
+            }
+          }
+        
+          h1, h2 {
+            transition: transform 0.3s ease, color 0.3s ease;
+          }
+        
+          h1 {
+            font-size: 34px;
+        
+            @include lg {
+              font-size: 32px;
+            }
+          }
+        
+          h2 {
+            font-size: 20px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    width: 100%; /* Ensure full width */
+    padding: 50px 0; /* Adjust padding as needed */
+    margin: 0;
+    animation: fadeInSection 1s ease-out;
+
+    h1 {
+      color: #0f2f03;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin-bottom: 20px; /* Space below heading */
+    }
+
+    .info1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin-top: -20px; /* Adjust margin as needed */
+      animation: fadeInLeft 1s ease-out;
+
+      .img1 {
+        img {
+          width: 100%; /* Adjust image width */
+          max-width: 400px; /* Maximum width for responsiveness */
+          height: auto; /* Maintain aspect ratio */
+          border-radius: 10px; /* Optional: Add border radius */
+          transition: transform 0.3s ease;
+        }
+
+        img:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .para {
+        margin-left: 20px;
+        padding: 10px;
+      }
+
+      .next {
+        font-size: 25px;
+        font-weight: bold; /* Use font-weight instead of font-style for bold */
+      }
+    }
+
+    h1 {
+      margin-top: 40px; /* Add margin to separate from other content */
+      animation: fadeInUp 1s ease-out;
+    }
+  }
+
+  .service {
+    text-align: center;
+    background-color: #f5b676;
+    border-radius: 20px; /* Reduce border-radius for a softer look */
+    margin-top: 105px; /* Add margin-top to create space between sections */
+    padding: 30px; /* Add padding for better spacing */
+    padding: 0 15px; // Adjust padding for small screens
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInSection 1s ease-out;
+
+    p {
+      padding: 10px;
+      font-weight: bold; /* Use font-weight instead of font-style for bold */
+      font-size: 20px;
+      text-decoration: underline;
+      text-decoration-color: #0f2f03;
+      transition: color 0.3s ease;
+    }
+
+    p:hover {
+      color: #fcfbfa; // Change color on hover
+    }
+
+    li {
+      text-align: center;
+      padding: 10px 0; /* Adjust padding for list items */
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .feat {
+    width: 100%; /* Ensure full width */
+    background-color: #7a97f8;
+    margin-top: 20px;
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 20px;
+    
+    animation: fadeInSection 1s ease-out;
+
+    h2 {
+      text-align: center;
+      margin-top: 15px;
+      text-decoration: underline;
+      text-decoration-color: rgb(2, 13, 13);
+      animation: fadeIn 3s ease-out;
+    }
+
+    .pic {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-top: 30px; /* Adjust margin for better spacing */
+      animation: fadeInUp 3s ease-out;
+
+      .i {
+        img {
+          width: 100%; /* Adjust image width */
+          max-width: 300px; /* Maximum width for responsiveness */
+          height: auto; /* Maintain aspect ratio */
+          padding-bottom: 10px;
+          border-radius: 20px; /* Optional: Add border radius */
+          transition: transform 0.3s ease;
+        }
+
+        img:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .foot {
+    background-color: #DEDFDE;
+    padding: 0;
+    margin: 0;
+
+    .container {
+      padding: 0 15px; // Adjust padding for small screens
+
+      @include lg {
+        padding: 0; // Remove padding on larger screens
+      }
+    }
+
+    footer {
+      padding: 20px 0; // Adjust vertical padding as needed
+    }
+
+    .btn {
+      padding: 10px 20px; // Adjust button padding
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background-color: #4CAF50; // Example hover background color
+    }
+  }
+}
+
+// Keyframes for animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

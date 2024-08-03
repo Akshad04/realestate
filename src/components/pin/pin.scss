@@ -1,0 +1,48 @@
+.popupContainer {
+  display: flex;
+  align-items: center; // Center items vertically
+  gap: 20px;
+  max-width: 300px; // Limit the width of the popup for better appearance
+  padding: 10px; // Add padding inside the popup
+  border-radius: 8px; // Rounded corners for the popup
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  background-color: #fff; // Background color to match the theme
+
+  img {
+    width: 80px; // Increase width for better visibility
+    height: 60px; // Adjust height proportionally
+    object-fit: cover; // Maintain aspect ratio
+    border-radius: 8px; // Rounded corners for the image
+    border: 2px solid #ddd; // Light border around the image
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: calc(100% - 100px); // Ensure text container takes remaining space
+    padding: 5px; // Add padding inside text container
+
+    a {
+      font-size: 16px; // Font size for the title
+      font-weight: bold; // Make the title stand out
+      color: #007bff; // Color for the link
+      text-decoration: none; // Remove underline
+
+      &:hover {
+        text-decoration: underline; // Underline on hover
+        color: #0056b3; // Darker color on hover
+      }
+    }
+
+    span {
+      font-size: 14px; // Font size for bedroom info
+      color: #555; // Slightly lighter color for secondary text
+    }
+
+    b {
+      font-size: 16px; // Font size for price
+      color: #000; // Color for price
+    }
+  }
+}
