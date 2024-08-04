@@ -11,9 +11,9 @@ function HomePage() {
       <div className="homePage">
         <div className="textContainer">
           <div className="wrapper">
-            <h1 className="title"><span className="nest">Nest</span>Quest: Connecting You to Your Perfect Home</h1>
+            <h1 className="title"><span className="nest">Realty </span>Nest Seekers: Connecting You to Your Perfect Home</h1>
             <p>
-            At NestQuest, we make your real estate journey seamless and exciting. Whether you're looking to buy, sell, or rent, our expert team is dedicated to helping you find the perfect home. Explore our extensive listings and let us guide you every step of the way to your dream property
+            At Realty Nest Seekers, we make your real estate journey seamless and exciting. Whether you're looking to buy, sell, or rent, our expert team is dedicated to helping you find the perfect home. Explore our extensive listings and let us guide you every step of the way to your dream property
             </p>
             <SearchBar />
             <div className="testimonials">
@@ -96,9 +96,9 @@ function HomePage() {
             </div>
             <div className="para">
           <h1>About Us</h1>
-          <p className="next">Welcome to NestQuest</p>
+          <p className="next">Welcome to Realty Nest Seekers</p>
           <p>
-            At NestQuest, we are dedicated to turning your real estate dreams into reality. With a deep understanding of the market and a commitment to excellence, our experienced team of agents is here to guide you through every step of the buying, selling, or renting process. We pride ourselves on offering personalized, client-focused solutions that meet your unique needs and preferences. Our mission is to build long-lasting relationships with our clients, grounded in trust, transparency, and exceptional service. Discover how NestQuest can help you find the perfect place to call home or maximize the value of your property.
+            At Realty Nest Seekers, we are dedicated to turning your real estate dreams into reality. With a deep understanding of the market and a commitment to excellence, our experienced team of agents is here to guide you through every step of the buying, selling, or renting process. We pride ourselves on offering personalized, client-focused solutions that meet your unique needs and preferences. Our mission is to build long-lasting relationships with our clients, grounded in trust, transparency, and exceptional service. Discover how Realty Nest Seekers can help you find the perfect place to call home or maximize the value of your property.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ function HomePage() {
                     <strong>Phone:</strong> (123) 456-7890
                   </li>
                   <li className="mb-2">
-                    <strong>Email:</strong> info@nestquest.com
+                    <strong>Email:</strong> info@RealtyNestSeekers.com
                   </li>
                   <li className="mb-2">
                     <strong>Address:</strong> 123 Real Estate St, City, Country
@@ -148,7 +148,7 @@ function HomePage() {
               </div>
 
               <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p>© 2024 NestQuest.Inc. All rights reserved.</p>
+                <p>© 2024 RealtyNestSeekers.Inc. All rights reserved.</p>
                 <ul className="list-unstyled d-flex">
                   <li className="ms-3">
                     <a className="link-body-emphasis" href="#">
@@ -182,3 +182,4 @@ function HomePage() {
 }
 
 export default HomePage;
+
