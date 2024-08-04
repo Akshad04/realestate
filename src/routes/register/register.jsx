@@ -1,3 +1,4 @@
+// src/Register.js
 import "./register.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -55,3 +56,4 @@ function Register() {
 }
 
 export default Register;
+

@@ -11,25 +11,25 @@ function HomePage() {
       <div className="homePage">
         <div className="textContainer">
           <div className="wrapper">
-            <h1 className="title">NestQuest: Connecting You to Your Perfect Home</h1>
+            <h1 className="title"><span className="nest">Nest</span>Quest: Connecting You to Your Perfect Home</h1>
             <p>
             At NestQuest, we make your real estate journey seamless and exciting. Whether you're looking to buy, sell, or rent, our expert team is dedicated to helping you find the perfect home. Explore our extensive listings and let us guide you every step of the way to your dream property
             </p>
             <SearchBar />
-            <div className="boxes">
-              <div className="box">
-                <h1>16+</h1>
-                <h2>Years of Experience</h2>
-              </div>
-              <div className="box">
-                <h1>200</h1>
-                <h2>Award Gained</h2>
-              </div>
-              <div className="box">
-                <h1>2000+</h1>
-                <h2>Property Ready</h2>
-              </div>
-            </div>
+            <div className="testimonials">
+  <div className="testimonial">
+    <p>The team was amazing in helping us find our dream home. Highly recommend!</p>
+    <h3>- Jane Doe</h3>
+  </div>
+  <div className="testimonial">
+    <p>Professional and efficient service. We sold our property above market value.</p>
+    <h3>- John Smith</h3>
+  </div>
+  <div className="testimonial">
+    <p>Great experience with their property management services. Very reliable.</p>
+    <h3>- Mary Johnson</h3>
+  </div>
+</div>
           </div>
         </div>
 
@@ -65,6 +65,13 @@ function HomePage() {
                   alt=""
                 />
               </div>
+              
+              <div className="i">
+                <img
+                  src="https://propertyaffaire.com/dlfcrestgurgaon/images/gallery/sample-flats/area-3898-sqft/sample-flat-3898-im-01.jpg"
+                  alt=""
+                />
+              </div>
               <div className="i">
                 <img
                   src="https://i2.au.reastatic.net/800x600/42f1978c99dabd901ba214ef7403b7bdb1f0a000f252bfaa308fbfcd68ad00c5/main.jpg"
@@ -73,7 +80,7 @@ function HomePage() {
               </div>
               <div className="i">
                 <img
-                  src="https://propertyaffaire.com/dlfcrestgurgaon/images/gallery/sample-flats/area-3898-sqft/sample-flat-3898-im-01.jpg"
+                  src="https://th.bing.com/th/id/OIP.-d0JHr29NE0fiRqEu8MdXgHaFO?rs=1&pid=ImgDetMain"
                   alt=""
                 />
               </div>
@@ -88,134 +95,51 @@ function HomePage() {
               />
             </div>
             <div className="para">
-              <h1>About us</h1>
-              <p className="next">About NestQuest</p>
-              <p>
-                At NestQuest, we are passionate about helping you find the
-                perfect place to call home. With years of experience in the real
-                estate market, our knowledgeable agents are committed to
-                providing exceptional service and personalized solutions. We
-                believe in building lasting relationships with our clients based
-                on trust, integrity, and results.
-              </p>
-            </div>
-          </div>
-
-          
+          <h1>About Us</h1>
+          <p className="next">Welcome to NestQuest</p>
+          <p>
+            At NestQuest, we are dedicated to turning your real estate dreams into reality. With a deep understanding of the market and a commitment to excellence, our experienced team of agents is here to guide you through every step of the buying, selling, or renting process. We pride ourselves on offering personalized, client-focused solutions that meet your unique needs and preferences. Our mission is to build long-lasting relationships with our clients, grounded in trust, transparency, and exceptional service. Discover how NestQuest can help you find the perfect place to call home or maximize the value of your property.
+          </p>
         </div>
 
-        <div class="foot" style={{ backgroundColor: "#DEDFDE", overflow: "hidden" }}>
-          <footer class="py-5">
-            <div class="container">
-              <div class="row">
-                <div class="col-6 col-md-2 mb-3">
-                  <h5>Section</h5>
-                  <ul class="nav flex-column">
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        Home
-                      </a>
-                    </li>
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        Features
-                      </a>
-                    </li>
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        Pricing
-                      </a>
-                    </li>
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        FAQs
-                      </a>
-                    </li>
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        About
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+          </div>   
+        </div>
 
-                <div class="col-6 col-md-2 mb-3">
-                  <h5>Section</h5>
-                  <ul class="nav flex-column">
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        Home
-                      </a>
-                    </li>
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        Features
-                      </a>
-                    </li>
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        Pricing
-                      </a>
-                    </li>
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        FAQs
-                      </a>
-                    </li>
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        About
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+        <div className="foot" style={{ backgroundColor: "black", overflow: "hidden", borderRadius:"20px", color:"white" }}>
+          <footer className="py-5">
+            <div className="container">
+              <div className="row">
+        
+              <div className="col-md-3 mb-3">
+                <h5>Contact Us</h5>
+                <ul className="list-unstyled">
+                  <li className="mb-2">
+                    <strong>Phone:</strong> (123) 456-7890
+                  </li>
+                  <li className="mb-2">
+                    <strong>Email:</strong> info@nestquest.com
+                  </li>
+                  <li className="mb-2">
+                    <strong>Address:</strong> 123 Real Estate St, City, Country
+                  </li>
+                </ul>
+              </div>
 
-                <div class="col-6 col-md-2 mb-3">
-                  <h5>Section</h5>
-                  <ul class="nav flex-column">
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        Home
-                      </a>
-                    </li>
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        Features
-                      </a>
-                    </li>
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        Pricing
-                      </a>
-                    </li>
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        FAQs
-                      </a>
-                    </li>
-                    <li class="nav-item mb-2">
-                      <a href="#" class="nav-link p-0 text-body-secondary">
-                        About
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="col-md-5 offset-md-1 mb-3">
+                <div className="col-md-5 offset-md-1 mb-3">
                   <form>
                     <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of what's new and exciting from us.</p>
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                      <label for="newsletter1" class="visually-hidden">
+                    <p>Monthly digest of whats new and exciting from us.</p>
+                    <div className="d-flex flex-column flex-sm-row w-100 gap-2">
+                      <label htmlFor="newsletter1" className="visually-hidden">
                         Email address
                       </label>
                       <input
                         id="newsletter1"
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Email address"
                       />
-                      <button class="btn btn-primary" type="button">
+                      <button className="btn btn-primary" type="button">
                         Subscribe
                       </button>
                     </div>
@@ -223,27 +147,27 @@ function HomePage() {
                 </div>
               </div>
 
-              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                 <p>© 2024 NestQuest.Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
-                  <li class="ms-3">
-                    <a class="link-body-emphasis" href="#">
-                      <svg class="bi" width="24" height="24">
-                        <use xlink:href="#twitter" />
+                <ul className="list-unstyled d-flex">
+                  <li className="ms-3">
+                    <a className="link-body-emphasis" href="#">
+                      <svg className="bi" width="24" height="24">
+                        <use xlinkHref="#twitter" />
                       </svg>
                     </a>
                   </li>
-                  <li class="ms-3">
-                    <a class="link-body-emphasis" href="#">
-                      <svg class="bi" width="24" height="24">
-                        <use xlink:href="#instagram" />
+                  <li className="ms-3">
+                    <a className="link-body-emphasis" href="#">
+                      <svg className="bi" width="24" height="24">
+                        <use xlinkHref="#instagram" />
                       </svg>
                     </a>
                   </li>
-                  <li class="ms-3">
-                    <a class="link-body-emphasis" href="#">
-                      <svg class="bi" width="24" height="24">
-                        <use xlink:href="#facebook" />
+                  <li className="ms-3">
+                    <a className="link-body-emphasis" href="#">
+                      <svg className="bi" width="24" height="24">
+                        <use xlinkHref="#facebook" />
                       </svg>
                     </a>
                   </li>
@@ -258,4 +182,3 @@ function HomePage() {
 }
 
 export default HomePage;
-

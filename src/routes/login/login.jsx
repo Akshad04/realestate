@@ -39,7 +39,7 @@ function Login() {
   return (
     <div className="login">
       <div className="left-side">
-        {/* You can put your image or any content here */}
+        {/* Background image */}
         <img src="/bg.png" alt="Background" />
       </div>
       <div className="right-side">
@@ -71,3 +71,4 @@ function Login() {
 }
 
 export default Login;
+

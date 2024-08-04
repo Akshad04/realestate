@@ -8,6 +8,7 @@
   border-radius: 8px; /* Optional: Rounded corners */
   overflow: hidden; /* Hide overflow */
   border: 2px solid #2d2a26; /* Blue border for the entire login page */
+margin-top: 20px;
   
   .left-side {
     flex: 1; /* Take up equal space */
@@ -64,6 +65,7 @@
       justify-content: center;
       align-items: center;
       
+      
       h1 {
         margin-bottom: 30px; /* Increased margin */
         color: #2d2a26; /* Blue color for text */
@@ -89,15 +91,15 @@
         transition: border-color 0.3s ease, box-shadow 0.3s ease;
         
         &:focus {
-          border-color: #007bff;
-          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+          border-color: #7a4e26;
+          box-shadow: 0 0 5px rgba(159, 111, 7, 0.5); 
         }
       }
 
       button {
         width: 100%;
         padding: 15px; /* Increased padding */
-        background-color: #2d2a26; /* Blue background */
+        background-color: #76471c; /* Blue background */
         border: none;
         color: white;
         border-radius: 5px;
@@ -110,7 +112,7 @@
         }
 
         &:hover {
-          background-color: #2d2a26; /* Darker blue on hover */
+          background-color: #522f0e; /* Darker blue on hover */
           transform: scale(1.05); /* Slightly enlarge button on hover */
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
         }
@@ -160,3 +162,5 @@
     }
   }
 }
+
+

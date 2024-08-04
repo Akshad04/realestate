@@ -10,7 +10,7 @@
 .homePage {
   width: 100%;
   height: 100vh; // Ensure full viewport height
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://www.compass.com/m/87745c0253dcffd59b7d402004ba87c85f6ec461_img_1/origin.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://cdn.pixabay.com/photo/2020/04/28/04/03/villa-5102547_960_720.jpg") no-repeat center center;
   background-size: cover; // Ensure the image covers the entire background
   align-items: center;
   margin: 0;
@@ -33,6 +33,11 @@
       padding: 0 15px; // Adjust padding for small screens
       animation: fadeIn 1s ease-out;
 
+      .nest {
+        color: #ffb917;
+        font-weight: bold;
+      }
+      
       p {
         color: white;
         font-size: 25px;
@@ -56,7 +61,7 @@
       .title {
         font-size: 50px;
         color: white;
-        margin-top: 60px;
+        margin-top: 15px;
         text-align: center;
         animation: slideIn 3s ease-out;
 
@@ -114,7 +119,7 @@
 
   .about {
     width: 100%; /* Ensure full width */
-    padding: 50px 0; /* Adjust padding as needed */
+    padding: 20px 0; /* Adjust padding as needed */
     margin: 0;
     animation: fadeInSection 1s ease-out;
 
@@ -124,149 +129,207 @@
       text-align: center;
       margin-bottom: 20px; /* Space below heading */
     }
+    
+   
 
     .info1 {
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 20px;
-      margin-top: -20px; /* Adjust margin as needed */
+      margin-top: 0px;
       animation: fadeInLeft 1s ease-out;
-
+      background: linear-gradient(to right, #4e3b2a, #d99e5f); /* Gradient from one color to another */
+      margin: 20px 0 0 0;
+      border-radius: 20px;
+      font-size: 18px;
+    
       .img1 {
         img {
-          width: 100%; /* Adjust image width */
-          max-width: 400px; /* Maximum width for responsiveness */
-          height: auto; /* Maintain aspect ratio */
-          border-radius: 10px; /* Optional: Add border radius */
+          width: 100%;
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
           transition: transform 0.3s ease;
         }
-
+    
         img:hover {
           transform: scale(1.05);
         }
       }
-
+    
       .para {
         margin-left: 20px;
         padding: 10px;
       }
-
+    
       .next {
         font-size: 25px;
-        font-weight: bold; /* Use font-weight instead of font-style for bold */
+        font-weight: bold;
       }
-    }
-
-    h1 {
-      margin-top: 40px; /* Add margin to separate from other content */
-      animation: fadeInUp 1s ease-out;
     }
   }
 
   .service {
     text-align: center;
-    background-color: #f5b676;
-    border-radius: 20px; /* Reduce border-radius for a softer look */
-    margin-top: 105px; /* Add margin-top to create space between sections */
-    padding: 30px; /* Add padding for better spacing */
-    padding: 0 15px; // Adjust padding for small screens
+    
+    background: linear-gradient(to right, #8a5e3c, #d7a54c); /* Gradient from one color to another */
+    border-radius: 20px;
+    margin-top: 90px;
+    padding: 30px 15px; // Adjust padding for small screens
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeInSection 1s ease-out;
-
+  
     p {
-      padding: 10px;
-      font-weight: bold; /* Use font-weight instead of font-style for bold */
-      font-size: 20px;
+      padding-top: 10px;
+      font-weight: bold;
+      font-size: 30px;
       text-decoration: underline;
       text-decoration-color: #0f2f03;
       transition: color 0.3s ease;
     }
-
+  
     p:hover {
       color: #fcfbfa; // Change color on hover
     }
-
+  
     li {
       text-align: center;
-      padding: 10px 0; /* Adjust padding for list items */
+      padding: 10px 10px;
+      color: white;
+      font-size: 20px;
+      font-weight: 400;
     }
-
+  
     &:hover {
       transform: scale(1.05);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
   }
 
-  .feat {
-    width: 100%; /* Ensure full width */
-    background-color: #7a97f8;
-    margin-top: 20px;
-    padding: 20px; /* Add padding for better spacing */
-    border-radius: 20px;
+  .testimonials {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: transparent; /* Light background */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 10px; /* Space above the section */
+    animation: fadeInSection 1s ease-out; /* Animation for fading in */
     
-    animation: fadeInSection 1s ease-out;
-
-    h2 {
+    .testimonial {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      width: 30%; /* Adjust width as needed */
       text-align: center;
-      margin-top: 15px;
-      text-decoration: underline;
-      text-decoration-color: rgb(2, 13, 13);
-      animation: fadeIn 3s ease-out;
-    }
-
-    .pic {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      margin-top: 30px; /* Adjust margin for better spacing */
-      animation: fadeInUp 3s ease-out;
-
-      .i {
-        img {
-          width: 100%; /* Adjust image width */
-          max-width: 300px; /* Maximum width for responsiveness */
-          height: auto; /* Maintain aspect ratio */
-          padding-bottom: 10px;
-          border-radius: 20px; /* Optional: Add border radius */
-          transition: transform 0.3s ease;
-        }
-
-        img:hover {
-          transform: scale(1.05);
-        }
+      transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+  
+      &:hover {
+        transform: scale(1.05); /* Zoom effect on hover */
+        background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+      }
+  
+      p {
+        font-size: 16px;
+        color: #f3f2f2; /* Text color */
+        margin-bottom: 10px;
+      }
+  
+      h3 {
+        font-size: 18px;
+        color: #aa723f; /* Text color */
+        margin: 0;
+        font-style: italic;
       }
     }
   }
+  
+  .feat {
+    width: 100%;
+    background: linear-gradient(to bottom, #6e4b2c, #f4a300); /* Gradient from dark brown to amber */
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    animation: fadeInSection 1s ease-out;
+    color: #ff9900;
+    font-size: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effects */
+  
+    &:hover {
+        transform: scale(1.05); /* Bulge effect on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for emphasis */
+    }
+  
+    h2 {
+        text-align: center;
+        margin-top: 15px;
+        text-decoration: underline;
+        text-decoration-color: rgb(2, 13, 13);
+        color: black; /* Default color */
+        transition: color 0.3s ease; /* Smooth transition for hover effect */
+        animation: fadeIn 3s ease-out;
+
+        &:hover {
+            color: white; /* Change color on hover */
+        }
+    }
+  
+    .pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+        animation: fadeInUp 3s ease-out;
+  
+        .i {
+            img {
+                width: 100%;
+                max-width: 300px;
+                height: 250px;
+                padding-bottom: 10px;
+                padding: 15px;
+                border-radius: 20px;
+                transition: transform 0.3s ease;
+            }
+  
+            img:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
 
   .foot {
-    background-color: #DEDFDE;
     padding: 0;
     margin: 0;
-
+    background: linear-gradient(to top,  #f5b942, #d17b1a); /* Gradient from dark green to a lighter green */
+    
     .container {
       padding: 0 15px; // Adjust padding for small screens
-
+  
       @include lg {
         padding: 0; // Remove padding on larger screens
       }
     }
-
+  
     footer {
-      padding: 20px 0; // Adjust vertical padding as needed
+      padding: 10px 0; // Adjust vertical padding as needed
     }
-
+  
     .btn {
       padding: 10px 20px; // Adjust button padding
       transition: transform 0.3s ease, background-color 0.3s ease;
+      background: #2042ed; // Example button background color
+      color: white; // Ensure text is readable on button
+  
+      &:hover {
+        transform: scale(1.1);
+        background: #102a6f; // Example hover background color
+      }
     }
-
-    .btn:hover {
-      transform: scale(1.1);
-      background-color: #4CAF50; // Example hover background color
-    }
-  }
+  }  
 }
 
 // Keyframes for animations
@@ -290,24 +353,11 @@
   }
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes slideIn {
   from {
-    opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-100%);
   }
   to {
-    opacity: 1;
     transform: translateX(0);
   }
 }
@@ -322,3 +372,15 @@
     transform: translateX(0);
   }
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

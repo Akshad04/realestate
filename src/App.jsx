@@ -10,6 +10,7 @@ import ProfileUpdatePage from "./routes/profileUpdatePage/profileUpdatePage";
 import NewPostPage from "./routes/newPostPage/newPostPage";
 import { listPageLoader, profilePageLoader, singlePageLoader } from "./lib/loaders";
 import Dashboard from "./routes/Dashboard/dashboard";
+import Blog from "./routes/blogs/Blog";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,6 +25,11 @@ function App() {
         {
           path: "/dashboard",
           element: <Dashboard />,
+        }
+        ,
+        {
+          path: "/blog",
+          element: <Blog/>,
         },
         {
           path: "/list",

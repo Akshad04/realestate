@@ -8,6 +8,7 @@
   border-radius: 8px; /* Optional: Rounded corners */
   overflow: hidden; /* Hide overflow */
   border: 2px solid #2d2a26; /* Blue border for the entire register page */
+  margin-top: 20px;
   
   .imgContainer {
     flex: 1; /* Take up 1 part of the available space */
@@ -84,15 +85,15 @@
         transition: border-color 0.3s ease, box-shadow 0.3s ease;
         
         &:focus {
-          border-color: #2d2a26;
-          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+          border-color: #76471c;
+          box-shadow: 0 0 5px rgba(155, 110, 4, 0.5); /* Blue shadow on focus */
         }
       }
 
       button {
         width: 100%;
         padding: 15px; /* Increased padding */
-        background-color: #2d2a26; /* Green background */
+        background-color: #76471c; /* Green background */
         border: none;
         color: white;
         border-radius: 5px;
@@ -105,7 +106,7 @@
         }
 
         &:hover {
-          background-color: #020000; /* Darker green on hover */
+          background-color: #522f0e; /* Darker green on hover */
           transform: scale(1.05); /* Slightly enlarge button on hover */
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
         }
@@ -155,3 +156,4 @@
     }
   }
 }
+
