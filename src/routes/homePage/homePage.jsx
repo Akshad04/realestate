@@ -19,15 +19,15 @@ function HomePage() {
             <div className="testimonials">
   <div className="testimonial">
     <p>The team was amazing in helping us find our dream home. Highly recommend!</p>
-    <h3>- Jane Doe</h3>
+    <h3>- Akshad Mhaskar</h3>
   </div>
   <div className="testimonial">
     <p>Professional and efficient service. We sold our property above market value.</p>
-    <h3>- John Smith</h3>
+    <h3>- Komal Singh</h3>
   </div>
   <div className="testimonial">
     <p>Great experience with their property management services. Very reliable.</p>
-    <h3>- Mary Johnson</h3>
+    <h3>- Nidhi Pednekar</h3>
   </div>
 </div>
           </div>
