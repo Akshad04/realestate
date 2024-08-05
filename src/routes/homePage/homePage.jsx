@@ -139,7 +139,7 @@ function HomePage() {
                         className="form-control"
                         placeholder="Email address"
                       />
-                      <button className="btn btn-primary" type="button">
+                      <button className="btn" type="button">
                         Subscribe
                       </button>
                     </div>
